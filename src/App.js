@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,13 +16,13 @@ function App() {
 
             {/* <Button text="something" onClick={() => { }} className="sdsd" disabled={true} /> */}
 
-            <button
+            {/* <button
               className="btn btn-success mx-3"
               onClick={handleIncreaement}
             >
               Increament
-            </button>
-            <button
+            </button> */}
+            {/* <button
               className="btn btn-danger mx-3"
               onClick={() => setCount(count - 1)}
               disabled={count === 0}
@@ -34,7 +35,7 @@ function App() {
               disabled={count === 0}
             >
               Reset
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
