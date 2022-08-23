@@ -22,14 +22,14 @@ const Assets = () => {
               className="btn btn-success mx-3"
               onClick={handleIncreasement}
             >
-              Increasement
+              Increment
             </button>
             <button
               className="btn btn-danger mx-3"
               onClick={handleDecreasement}
               disabled={count === 0}
             >
-              Decreasement
+              Decrement
             </button>
             <button
               className="btn btn-secondary mx-3"

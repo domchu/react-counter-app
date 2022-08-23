@@ -13,13 +13,13 @@ function App() {
             <h2 className="my-5 ">{count}</h2>
             <Button
               className="btn btn-success mx-3"
-              text="Increasement"
+              text="Increment"
               onClick={() => setCount(count + 1)}
               disabled={false}
             />
             <Button
               className="btn btn-danger mx-3"
-              text="Decreasement"
+              text="Decrement"
               onClick={() => setCount(count - 1)}
               disabled={count === 0}
             />
