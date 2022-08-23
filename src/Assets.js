@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-import Button from "./Button";
 
-function App() {
+const Assets = () => {
   const [count, setCount] = useState(0);
+
+  const handleIncreasement = () => {
+    setCount(count + 1);
+  };
+  const handleDecreasement = () => {
+    setCount(count - 1);
+  };
 
   return (
     <div div className="container my-5">
@@ -11,31 +17,32 @@ function App() {
           <h1>Counter App</h1>
           <div className="my-5">
             <h2 className="my-5 ">{count}</h2>
-            <Button
+
+            <button
               className="btn btn-success mx-3"
-              text="Increasement"
-              onClick={() => setCount(count + 1)}
-              disabled={false}
-            />
-            <Button
+              onClick={handleIncreasement}
+            >
+              Increasement
+            </button>
+            <button
               className="btn btn-danger mx-3"
-              text="Decreasement"
-              onClick={() => setCount(count - 1)}
+              onClick={handleDecreasement}
               disabled={count === 0}
-            />
-            <Button
+            >
+              Decreasement
+            </button>
+            <button
               className="btn btn-secondary mx-3"
-              text="Reset"
               onClick={() => setCount(0)}
               disabled={count === 0}
-            />
-
-            {/* <Button text="something" onClick={() => { }} className="sdsd" disabled={true} /> */}
+            >
+              Reset
+            </button>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default Assets;
