@@ -12,19 +12,19 @@ function App() {
           <div className="my-5">
             <h2 className="my-5 ">{count}</h2>
             <Button
-              className="btn btn-success mx-3"
+              className="btn btn-success mx-3 my-2"
               text="Increment"
               onClick={() => setCount(count + 1)}
               disabled={false}
             />
             <Button
-              className="btn btn-danger mx-3"
+              className="btn btn-danger mx-3 my-2"
               text="Decrement"
               onClick={() => setCount(count - 1)}
               disabled={count === 0}
             />
             <Button
-              className="btn btn-secondary mx-3"
+              className="btn btn-secondary mx-3 my-2"
               text="Reset"
               onClick={() => setCount(0)}
               disabled={count === 0}
